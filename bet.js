@@ -15,6 +15,7 @@ function generateRandomKey() {
             document.getElementById("s" + stars.length).innerHTML =  randomStar;
         }
     }
+    document.getElementById("previous-keys").innerHTML += `<h5>${numbers.join(", ")} &nbsp; ${stars.join(", ")}</h5>`;
     console.log("Key generated!");
     console.log("Numbers: " + numbers);
     console.log("Stars: " + stars);

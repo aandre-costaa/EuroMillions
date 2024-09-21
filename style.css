@@ -118,6 +118,28 @@ h1{
     color: rgb(14, 14, 148);
 }
 
+.key-history {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 32px;
+    padding-left: 16px;
+    width: calc(100vw - 16px);
+}
+
+.key-history #previous-keys {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow-y: scroll;
+    height: 96px;
+}
+
+.key-history #previous-keys h5 {
+    margin: 8px 0 0 0;
+}
+
 footer {
     display: flex;
     position: absolute;
