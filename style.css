@@ -1,0 +1,133 @@
+* {
+    font-family: "montserrat";
+}
+body {
+    margin: 0;
+    height: 100%;
+    width: 100vw;
+}
+
+h1{
+    font-size: 32px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 96px;
+    padding: 0 16px;
+    margin: 8px;
+    box-shadow: 4px 4px 16px #c7c7c7;
+    border-radius: 16px;
+}
+
+.header img{
+    width: 64px;
+    height: 64px;
+    object-fit: fill;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+#title{
+    padding-left: 32px;
+    color: rgb(14, 14, 148);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .content-head {
+    text-align: center; 
+    margin: 64px 0 0 0;
+}
+
+.content .content-head h1,
+.content .content-head h4 {
+    margin: 0;
+}
+
+.content .key-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.content .key-div .key-numbers,
+.content .key-div .key-stars {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.content .key-div .key-numbers .numbers,
+.content .key-div .key-stars .stars {
+    display: flex;
+    flex-direction: row;
+}
+
+.content .key-div .key-numbers .numbers .number,
+.content .key-div .key-stars .stars .star {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    margin-right: 8px;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color: #b2b2b2;
+}
+
+.content .key-div .key-stars .stars .star {
+    background-color: rgb(255, 104, 104);
+}
+
+.content .key-div .key-numbers .numbers .number h1,
+.content .key-div .key-stars .stars .star h1 {
+    line-height: 48px;
+    margin: 0 !important;
+}
+
+#generate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 64px;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px;
+    background-color: rgb(40, 206, 40);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    margin-top: 32px;
+    box-shadow: 4px 4px 16px #c7c7c7;
+}
+
+#generate:hover {
+    cursor: pointer;
+    border: 2px solid rgb(14, 14, 148);
+    color: rgb(14, 14, 148);
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    right: 0;
+    padding: 16px 32px;
+}
+
+footer h5 {
+    color: rgb(14, 14, 148);
+    margin: 0;
+}

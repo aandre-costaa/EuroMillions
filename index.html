@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Euromillions">
+    <!-- Document title -->
+    <title>Euromilhões</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="header">
+        <img src="assets/santa-casa-logo.png" alt="logo-santa-casa">
+        <h1 id="title">Euromilhões</h1>
+    </div>
+
+    <div class="content">
+        <div class="content-head">
+            <h1>Chave<br><h4>(5 números, 2 estrelas)</h4></h1>
+        </div>
+        <div class="key-div">
+            <div class="key-numbers">
+                <h3>Números</h3>
+                <div class="numbers">
+                    <div id="n1" class="number"><h1>4</h1></div>
+                    <div id="n2" class="number"><h1>23</h1></div>
+                    <div id="n3" class="number"><h1>30</h1></div>
+                    <div id="n4" class="number"><h1>15</h1></div>
+                    <div id="n5" class="number"><h1>2</h1></div>
+                </div>
+                
+            </div>
+            <div class="key-stars">
+                <h3>Estrelas</h3>
+                <div class="stars">
+                    <div id="s1" class="star"><h1>5</h1></div>
+                    <div id="s2" class="star"><h1>12</h1></div>
+                </div>
+            </div>
+        </div>
+        <button id="generate">Gerar chave</button>
+    </div>
+
+    <footer>
+        <h5>Euromilhões&reg; a criar excêntricos de um dia para o outro</h5>
+    </footer>
+    
+    <script src="bet.js">
+        document.getElementById("generate").addEventListener("click", function() {
+            let randomNumbers = generateRandomNumbers();
+        });
+    </script>
+</body>
+
+</html>
