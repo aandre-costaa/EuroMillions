@@ -133,6 +133,7 @@ h1{
     justify-content: start;
     align-items: start;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     height: 96px;
 }
 
