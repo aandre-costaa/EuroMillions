@@ -130,11 +130,29 @@ h1{
 .key-history #previous-keys {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
     overflow-y: scroll;
     scroll-behavior: smooth;
     height: 96px;
+    width: 200px;
+}
+
+.key-history #previous-keys::-webkit-scrollbar {
+    width: 8px;
+}
+
+.key-history #previous-keys::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle of the scrollbar */
+.key-history #previous-keys::-webkit-scrollbar-thumb {
+    background: rgb(14, 14, 148);
+    border-radius: 10px;
+}
+
+
+.key-history #previous-keys::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 
 .key-history #previous-keys h5 {
