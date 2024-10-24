@@ -3,7 +3,7 @@ document.getElementById('generate').addEventListener('click', fetchKey);
 async function fetchKey() {
     try {
         // Make a GET request to your API
-        const response = await fetch('http://localhost:8000/generate-key');
+        const response = await fetch('https://euromillions-mvin.onrender.com/generate-key');
         const data = await response.json();
         console.log("Sucessfully fetched the key", data.key);
         
